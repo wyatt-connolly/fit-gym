@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Card from "./components/Card";
+import FeaturedCard from "./components/FeaturedCard";
 
 export default function Home() {
   return (
@@ -16,7 +16,6 @@ export default function Home() {
         </div>
         <video
           src="https:\/\/fitathletic.com\/wp-content\/uploads\/2023\/01\/FIT-Drone-Compilation.mp4"
-          type="video/mp4"
           autoPlay
           muted
           loop
@@ -33,7 +32,7 @@ export default function Home() {
               <h1 className="font-extrabold block">YOUR LIFE WITH FIT.</h1>
             </div>
             <p className="mt-4 sm:text-2xl sm:leading-loose font-semibold ">
-              VOTED "BEST GYM" EVERY YEAR
+              VOTED &quot;BEST GYM&quot; EVERY YEAR
             </p>
             <p className="mt-4 sm:text-xl sm:leading-relaxed">
               We set the bar when it comes to personal training, group fitness,
@@ -57,26 +56,26 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="grid lg:grid-cols-2 gap-4">
-        <Card
+      <div className="grid lg:grid-cols-2">
+        <FeaturedCard
           title="Premium Fitness Classes"
           src="https://fitathletic.com/wp-content/uploads/2021/09/woman-yoga-pose.jpg"
           description="For the member who wants it all. Our diverse group classes offer high-intensity, full-body, motivational workouts."
           button="View Class Schedule"
         />
-        <Card
+        <FeaturedCard
           title="Fit Perx"
           src="https://fitathletic.com/wp-content/uploads/2021/09/Fit-Perx.jpg"
           description="Let your membership pay for itself"
           button="View Our Benefits"
         />
-        <Card
+        <FeaturedCard
           title="High-End Clubs, Equipment & Amenities"
           src="https://fitathletic.com/wp-content/uploads/2021/09/High-End.jpg"
           description="Built to inspire"
           button="Find Your Location"
         />
-        <Card
+        <FeaturedCard
           title="Results-Driven Personal Training"
           src="https://fitathletic.com/wp-content/uploads/2022/04/Results-Driven-Personal-Training.jpg"
           description="Our world class personal trainers use our fiver pillars of health + fitness to help you assess, plan + achieve."

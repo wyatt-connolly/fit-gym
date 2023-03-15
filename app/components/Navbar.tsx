@@ -36,13 +36,13 @@ function Navbar() {
               Class Schedule
             </a>
             <a className="text-gray-500" href="">
-              Membership
+              Benefits
             </a>
             <a className="text-gray-500" href="">
-              Amenities
+              Location
             </a>
             <a className="text-gray-500" href="">
-              About
+              Trainers
             </a>
           </nav>
 
@@ -55,7 +55,7 @@ function Navbar() {
             </a>
 
             <a
-              className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white"
+              className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white"
               href=""
             >
               Join Online
@@ -73,7 +73,7 @@ function Navbar() {
                 className="h-5 w-5"
                 fill="none"
                 stroke="currentColor"
-                viewbox="0 0 24 24"
+                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path

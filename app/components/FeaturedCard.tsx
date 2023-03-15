@@ -1,14 +1,17 @@
 import Image from "next/image";
 
-function Card({ title, src, description, button }) {
+function FeaturedCard({ title, src, description, button }) {
   return (
     <div>
       <a href="#" className="relative block group">
-        <img
-          src={src}
-          alt=""
-          className="h-[350px] w-full object-cover transition duration-500 group-hover:opacity-90 sm:h-[450px]"
-        />
+        <div className="h-[350px] w-full sm:h-[450px]">
+          <Image
+            src={src}
+            alt=""
+            className=" object-cover transition duration-500 group-hover:opacity-90"
+            fill
+          />
+        </div>
 
         <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
           <div className="bg-black px-4 py-4 ">
@@ -50,4 +53,4 @@ function Card({ title, src, description, button }) {
   );
 }
 
-export default Card;
+export default FeaturedCard;
