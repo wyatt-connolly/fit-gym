@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
-function FeaturedCard({ title, src, description, button }) {
+function FeaturedCard({ title, src, description, button, href }) {
   return (
     <div>
-      <a href="#" className="relative block group">
+      <Link href={href} className="relative block group">
         <div className="h-[350px] w-full sm:h-[450px]">
           <Image
             src={src}
@@ -21,10 +22,7 @@ function FeaturedCard({ title, src, description, button }) {
               {description}
             </p>
 
-            <button
-              className="mt-3 group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-black focus:outline-none focus:ring "
-              href="/download"
-            >
+            <button className="mt-3 group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-black focus:outline-none focus:ring ">
               <span className="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
                 <svg
                   className="h-5 w-5"
@@ -48,7 +46,7 @@ function FeaturedCard({ title, src, description, button }) {
             </button>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
