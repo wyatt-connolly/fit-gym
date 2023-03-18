@@ -138,7 +138,7 @@ function Navbar() {
                   {({ active }) => (
                     <a
                       className={`${
-                        active && "bg-indigo-500/70"
+                        active && "bg-indigo-400/75"
                       } block   px-4 py-2 text-sm font-medium text-gray-700`}
                       href="/class-schedule"
                     >
@@ -150,7 +150,7 @@ function Navbar() {
                   {({ active }) => (
                     <a
                       className={`${
-                        active && "bg-indigo-500/70"
+                        active && "bg-indigo-400/75"
                       } block  px-4 py-2 text-sm font-medium text-gray-700`}
                       href="/benefits"
                     >
@@ -162,7 +162,7 @@ function Navbar() {
                   {({ active }) => (
                     <a
                       className={`${
-                        active && "bg-indigo-500/70"
+                        active && "bg-indigo-400/75"
                       } block  px-4 py-2 text-sm font-medium text-gray-700`}
                       href="/locations"
                     >
@@ -174,7 +174,7 @@ function Navbar() {
                   {({ active }) => (
                     <a
                       className={`${
-                        active && "bg-indigo-500/70"
+                        active && "bg-indigo-400/75"
                       } block  px-4 py-2 text-sm font-medium text-gray-700`}
                       href="/trainers"
                     >
