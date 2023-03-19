@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ScrollToTop from "./ScrollToTop";
 
 function Footer() {
   return (
@@ -233,7 +232,6 @@ function Footer() {
                     >
                       Subscribe
                     </button>
-                    <ScrollToTop />
                   </div>
                 </form>
               </div>

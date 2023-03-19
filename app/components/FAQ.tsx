@@ -7,10 +7,7 @@ function FAQ() {
         Frequently Asked Questions
       </h2>
       <div className="mt-8 space-y-4">
-        <details
-          className="group [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
+        <details className="group [&_summary::-webkit-details-marker]:hidden">
           <summary className="flex items-center justify-between p-4 rounded-lg cursor-pointer bg-gray-50">
             <h2 className="font-medium text-gray-900">
               What exactly does a personal trainer do?
@@ -39,9 +36,8 @@ function FAQ() {
             clients achieve their fitness goals, which may include everything
             from weight loss and strength training to general health management.
             <br />
-            <br />
-            If you’re looking for expertise-based personal training in San
-            Diego, Fit Athletic is a great choice. Our team is made up of
+            <br /> If you’re looking for expertise-based personal training in
+            San Diego, Fit Athletic is a great choice. Our team is made up of
             experienced trainers who are fully committed to helping you reach
             your goals and strengthen your health through customized exercise
             and personalized advice.

@@ -4,14 +4,14 @@ function Banner() {
   return (
     <div>
       <section className="bg-gray-50">
-        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:py-56 lg:items-center">
           <div className="mx-auto text-center">
-            <div className="text-3xl sm:text-5xl lg:text-8xl font-extrabold ">
+            <h2 className="text-3xl sm:text-5xl lg:text-8xl font-extrabold ">
               <AnimatedTextCharacter text="REINVENT" />
-              <AnimatedTextCharacter text="YOUR LIFE WITH FIT." />
-            </div>
+              <AnimatedTextCharacter text="YOUR LIFE WITH FIT" />
+            </h2>
             <p className="mt-4 sm:text-2xl sm:leading-loose font-semibold ">
-              <AnimatedTextCharacter text="YOUR LIFE WITH FIT. VOTED BEST GYM EVERY YEAR" />
+              YOUR LIFE WITH FIT. VOTED BEST GYM EVERY YEAR
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">

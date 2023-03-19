@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function TrainerCTA() {
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pb-8 sm:pb-12 lg:pb-32">
@@ -18,11 +20,12 @@ function TrainerCTA() {
           </p>
         </div>
       </div>
-      <div>
-        <img
+      <div className="relative h-40 w-full sm:h-56 md:h-full">
+        <Image
           alt="Student"
           src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-          className="h-40 w-full object-cover sm:h-56 md:h-full"
+          className="object-cover"
+          fill
         />
       </div>
     </div>

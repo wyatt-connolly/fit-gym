@@ -1,49 +1,21 @@
 "use client";
 import Link from "next/link";
-import { Menu, Transition } from "@headlessui/react";
-import { Fragment } from "react";
+import { Dialog, Transition, Menu } from "@headlessui/react";
+import { Fragment, useState } from "react";
+import PricingCard from "./PricingCard";
+import { dayMembership } from "./Pricing";
+import { XMarkIcon } from "@heroicons/react/20/solid";
 
-function VerticalMenu() {
-  return (
-    <nav aria-label="Main Nav" className="flex flex-col space-y-1  bg-white">
-      <a
-        href=""
-        className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
-      >
-        General
-      </a>
-
-      <a
-        href=""
-        className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-      >
-        Teams
-      </a>
-
-      <a
-        href=""
-        className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-      >
-        Billing
-      </a>
-
-      <a
-        href=""
-        className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-      >
-        Invoices
-      </a>
-
-      <a
-        href=""
-        className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
-      >
-        Account
-      </a>
-    </nav>
-  );
-}
 function Navbar() {
+  let [isOpen, setIsOpen] = useState(true);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
   return (
     <header aria-label="Site Header" className="shadow-sm">
       <div className="bg-indigo-600 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
@@ -52,14 +24,57 @@ function Navbar() {
           10 Day All Club Access Membership with $0 Enrollment Fees
         </p>
 
-        <a
+        <button
           className="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-indigo-600 transition hover:bg-white/90 focus:outline-none focus:ring active:text-indigo-500 sm:mt-0"
-          href="#"
+          onClick={openModal}
         >
           SHOP NOW
-        </a>
+        </button>
       </div>
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-50" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
 
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="relative w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-12 text-left align-middle shadow-xl transition-all">
+                  <button
+                    onClick={closeModal}
+                    className="absolute top-4 right-4"
+                  >
+                    <XMarkIcon className="h-6 w-6" />
+                  </button>
+
+                  <PricingCard
+                    membership="10 Day Membership"
+                    price="120"
+                    listItems={dayMembership}
+                  />
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
       <div className="mx-auto max-w-screen-xl p-4">
         <div className="flex items-center justify-between gap-4 lg:gap-10">
           <div className="flex lg:w-0 lg:flex-1">
@@ -72,34 +87,34 @@ function Navbar() {
             aria-label="Site Nav"
             className="hidden gap-8 text-sm font-medium lg:flex"
           >
-            <a className="text-gray-500" href="">
+            <Link className="text-gray-500" href="/class-schedule">
               Class Schedule
-            </a>
+            </Link>
             <Link className="text-gray-500" href="/benefits">
               Benefits
             </Link>
-            <a className="text-gray-500" href="">
-              Location
-            </a>
-            <a className="text-gray-500" href="">
+            <Link className="text-gray-500" href="/locations">
+              Locations
+            </Link>
+            <Link className="text-gray-500" href="/trainers">
               Trainers
-            </a>
+            </Link>
+            <Link className="text-gray-500" href="/about">
+              About
+            </Link>
           </nav>
 
           <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">
-            <a
-              className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
-              href=""
-            >
+            <div className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500 cursor-pointer">
               Guest Pass
-            </a>
+            </div>
 
-            <a
-              className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white"
-              href=""
+            <Link
+              className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white cursor-pointer"
+              href="/pricing"
             >
               Join Online
-            </a>
+            </Link>
           </div>
 
           <Menu as="div" className="lg:hidden">
@@ -166,7 +181,7 @@ function Navbar() {
                       } block  px-4 py-2 text-sm font-medium text-gray-700`}
                       href="/locations"
                     >
-                      Location
+                      Locations
                     </a>
                   )}
                 </Menu.Item>
@@ -179,6 +194,18 @@ function Navbar() {
                       href="/trainers"
                     >
                       Trainers
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      className={`${
+                        active && "bg-indigo-400/75"
+                      } block  px-4 py-2 text-sm font-medium text-gray-700`}
+                      href="/about"
+                    >
+                      About
                     </a>
                   )}
                 </Menu.Item>

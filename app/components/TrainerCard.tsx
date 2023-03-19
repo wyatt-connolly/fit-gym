@@ -1,23 +1,30 @@
-function TrainerCard({ src, name }) {
+import Image from "next/image";
+
+function TrainerCard({ src, name, profession }) {
   return (
     <li>
       <a href="#" className="group block overflow-hidden">
-        <img
-          src={src}
-          alt=""
-          className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px] object-cover"
-        />
+        <div>
+          <div className="relative h-[350px] w-full sm:h-[450px]">
+            <Image
+              src={src}
+              alt=""
+              className="transition duration-500 group-hover:scale-105  object-cover"
+              fill
+            />
+          </div>
 
-        <div className="relative bg-white pt-3">
-          <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
-            {name}
-          </h3>
+          <div className="relative bg-white pt-3">
+            <h3 className="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+              {name}
+            </h3>
 
-          <p className="mt-2">
-            <span className="sr-only">Name </span>
+            <p className="mt-2 text-gray-900">
+              <span className="sr-only">Name</span>
 
-            <span className="tracking-wider text-gray-900">Trainer Bio</span>
-          </p>
+              <span className="text-gray-900">{profession}</span>
+            </p>
+          </div>
         </div>
       </a>
     </li>
