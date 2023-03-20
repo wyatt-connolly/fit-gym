@@ -7,7 +7,7 @@ import { dayMembership } from "./Pricing";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
 function Navbar() {
-  let [isOpen, setIsOpen] = useState(true);
+  let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
     setIsOpen(false);
@@ -16,6 +16,7 @@ function Navbar() {
   function openModal() {
     setIsOpen(true);
   }
+
   return (
     <header aria-label="Site Header" className="shadow-sm">
       <div className="bg-indigo-600 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
@@ -68,6 +69,7 @@ function Navbar() {
                     membership="10 Day Membership"
                     price="120"
                     listItems={dayMembership}
+                    onClick={closeModal}
                   />
                 </Dialog.Panel>
               </Transition.Child>
