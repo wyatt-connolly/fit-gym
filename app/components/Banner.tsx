@@ -16,13 +16,13 @@ function Banner() {
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                className="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+                className="inline-block rounded bg-indigo-600 px-8 py-3 sm:text-md md:text-lg font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
                 href="/download"
               >
                 Experience Fit
               </a>
               <a
-                className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+                className="inline-block rounded border border-current px-8 py-3 sm:text-md md:text-lg font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
                 href="/download"
               >
                 Learn More

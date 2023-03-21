@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
 function FeaturedCard({ title, src, description, button, href }) {
   return (
@@ -23,22 +24,7 @@ function FeaturedCard({ title, src, description, button, href }) {
             </p>
 
             <button className="mt-3 group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-black focus:outline-none focus:ring ">
-              <span className="absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4">
-                <svg
-                  className="h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </span>
+              <ArrowLongRightIcon className="h-5 w-5 absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4" />
 
               <span className="text-sm font-medium transition-all group-hover:mr-4">
                 {button}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function TrainerCTA() {
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pb-8 sm:pb-12 lg:pb-32">
+    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
       <div className="bg-black p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl text-center">
           <h2 className="text-2xl font-bold text-white md:text-3xl">
