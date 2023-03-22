@@ -19,11 +19,11 @@ function FeaturedCard({ title, src, description, button, href }) {
           <div className="bg-black px-4 py-4 ">
             <h3 className="text-2xl font-medium text-white">{title}</h3>
 
-            <p className="mt-1.5 max-w-[40ch] text-lg text-white">
+            <p className="mb-3 mt-1.5 max-w-[40ch] text-lg text-white">
               {description}
             </p>
 
-            <button className="mt-3 group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-black focus:outline-none focus:ring ">
+            <button className=" group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-black focus:outline-none focus:ring ">
               <ArrowLongRightIcon className="h-5 w-5 absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4" />
 
               <span className="text-sm font-medium transition-all group-hover:mr-4">

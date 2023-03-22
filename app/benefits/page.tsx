@@ -1,18 +1,13 @@
 import Image from "next/image";
-import BenefitsCTA from "../components/BenefitsCTA";
-import {
-  TvIcon,
-  CreditCardIcon,
-  UserPlusIcon,
-  CpuChipIcon,
-  SparklesIcon,
-} from "@heroicons/react/20/solid";
+import Benefits from "../components/Benefits";
+import { benefits } from "@/data/benefits";
+import Input from "../components/Input";
 
 function Page() {
   return (
-    <div className="bg-black">
+    <div className="bg-black text-white">
       <div className="mx-auto max-w-xl px-4 sm:px-6 lg:px-8">
-        <div className="h-[calc(100vh_-_224px)] grid place-content-center">
+        <div className="h-[calc(100vh_-_224px)] sm:h-[calc(100vh_-_136px)] grid place-content-center">
           <div className="lg:py-24 ">
             <h2 className="text-3xl font-bold sm:text-4xl text-white ">
               JOIN THE COLLECTIVE. POWER YOUR PURSUIT.
@@ -29,7 +24,7 @@ function Page() {
           </div>
         </div>
       </div>{" "}
-      <section className="bg-black text-white">
+      <section>
         <div className=" py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 ">
           <div className="max-w-xl">
             <h2 className="text-3xl font-bold sm:text-4xl">
@@ -44,129 +39,76 @@ function Page() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
-            <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <svg
-                  className="h-5 w-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                  ></path>
-                </svg>
-              </span>
-
-              <div>
-                <h2 className="text-lg font-bold">UNLIMITED CLASSES</h2>
-
-                <p className="mt-1 text-sm text-gray-300">
-                  Master of One. Choreo Cult. Anthem. All classes at FIT are
-                  created and developed by the industry&apos;s best minds and
-                  taught by talented fitness instructors who test your limits
-                  and inspire results. Every className is booked in advance and
-                  complimentary to you as a member. Claim your exclusive offer
-                  and try a className at FIT.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <TvIcon className="h-5 w-5" />
-              </span>
-
-              <div>
-                <h2 className="text-lg font-bold">
-                  JOIN THE COLLECTIVE. POWER YOUR PURSUIT.
-                </h2>
-
-                <p className="mt-1 text-sm text-gray-300">
-                  Stream live and on-demand classes from the unrivaled
-                  collective, and be transported to the front row of
-                  className—wherever you are, whenever you’re ready. Unlimited
-                  access is included with your FIT membership.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <CreditCardIcon className="h-5 w-5" />
-              </span>
-
-              <div>
-                <h2 className="text-lg font-bold">DIVERSIFY YOUR FITNESS</h2>
-
-                <p className="mt-1 text-sm text-gray-300">
-                  Put your FIT membership on your American Express Platinum
-                  Card® and you'll get up to $300 back per year. Applicable on
-                  any FIT membership and the FIT+ digital fitness app. Terms
-                  apply.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <CpuChipIcon className="h-5 w-5" />
-              </span>
-
-              <div>
-                <h2 className="text-lg font-bold">INDUSTRY-BEST PROGRAMMING</h2>
-
-                <p className="mt-1 text-sm text-gray-300">
-                  Meet your goals anywhere with our expert instruction and
-                  top-tier fitness programs—in the club on our groundbreaking
-                  digital platforms. Claim your exclusive offer and experience
-                  our industry-best programming.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <UserPlusIcon className="h-5 w-5" />
-              </span>
-
-              <div>
-                <h2 className="text-lg font-bold">PERSONAL TRAINING AT FIT.</h2>
-
-                <p className="mt-1 text-sm text-gray-300">
-                  You and your dedicated personal trainer will create a plan
-                  that's tailored to your goals—and together, you'll work to
-                  unlock the results you want. At every step of the way, you'll
-                  be driven by a passionate trainer using the latest science
-                  during in-club sessions and at home with Virtual Personal
-                  Training.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                <SparklesIcon className="h-5 w-5" />
-              </span>
-
-              <div>
-                <h2 className="text-lg font-bold">THE SPA AT FIT</h2>
-
-                <p className="mt-1 text-sm text-gray-300">
-                  Take time to regenerate and elevate your performance with our
-                  always-evolving roster of health Spa services.
-                </p>
-              </div>
-            </div>
+            {benefits.map((benefit) => (
+              <Benefits {...benefit} />
+            ))}
           </div>
         </div>
       </section>
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+          <div className="lg:col-span-2 lg:py-12">
+            <p className="max-w-xl text-lg">
+              For more information or to schedule a complimentary tour, email
+              our Sales team at info@fit.com.
+            </p>
+
+            <div className="mt-8">
+              <a className="text-2xl font-bold text-rose-600 cursor-pointer">
+                619 475 4450
+              </a>
+
+              <address className="mt-2 not-italic">
+                282 Kevin Brook, Imogeneborough, CA 58517
+              </address>
+            </div>
+          </div>
+
+          <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <form action="" className="space-y-4">
+              <input
+                type="text"
+                className="block border border-grey-light w-full p-3 rounded mb-4"
+                name="fullname"
+                placeholder="Full name"
+              />
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <input
+                  type="text"
+                  className="block border border-grey-light w-full p-3 rounded mb-4"
+                  name="email"
+                  placeholder="Email"
+                />
+
+                <input
+                  type="tel"
+                  className="block border border-grey-light w-full p-3 rounded mb-4"
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </div>
+
+              <div>
+                <textarea
+                  className="w-full block border rounded border-grey-light p-3 text-sm"
+                  placeholder="Message"
+                  rows="8"
+                  id="message"
+                ></textarea>
+              </div>
+
+              <div className="mt-4">
+                <button
+                  type="submit"
+                  className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto hover:bg-gray-700"
+                >
+                  Send Enquiry
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
