@@ -13,7 +13,7 @@ function Testimonial({ title, review, person }) {
         </div>
 
         <div className="mt-4">
-          <h3 className="text-xl font-bold text-pink-600 sm:text-2xl">
+          <h3 className="text-xl font-bold text-rose-600 sm:text-2xl">
             {title}
           </h3>
 

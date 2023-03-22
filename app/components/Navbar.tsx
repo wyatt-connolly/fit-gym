@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Dialog, Transition, Menu } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import PricingCard from "./PricingCard";
-import { dayMembership } from "./Pricing";
+import { memberships } from "@/data/pricing";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
 function Navbar() {
@@ -68,8 +68,7 @@ function Navbar() {
                   <PricingCard
                     membership="10 Day Membership"
                     price="120"
-                    listItems={dayMembership}
-                    onClick={closeModal}
+                    listItems={memberships.dayMembership}
                   />
                 </Dialog.Panel>
               </Transition.Child>
@@ -100,9 +99,6 @@ function Navbar() {
             </Link>
             <Link className="text-gray-500" href="/trainers">
               Trainers
-            </Link>
-            <Link className="text-gray-500" href="/about">
-              About
             </Link>
           </nav>
 
@@ -196,18 +192,6 @@ function Navbar() {
                       href="/trainers"
                     >
                       Trainers
-                    </a>
-                  )}
-                </Menu.Item>
-                <Menu.Item>
-                  {({ active }) => (
-                    <a
-                      className={`${
-                        active && "bg-indigo-400/75"
-                      } block  px-4 py-2 text-sm font-medium text-gray-700`}
-                      href="/about"
-                    >
-                      About
                     </a>
                   )}
                 </Menu.Item>
