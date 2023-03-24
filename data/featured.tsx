@@ -1,5 +1,6 @@
 export const featured = [
   {
+    id: 1,
     title: "Premium Fitness Classes",
     src: "https://fitathletic.com/wp-content/uploads/2021/09/woman-yoga-pose.jpg",
     description:
@@ -8,6 +9,7 @@ export const featured = [
     href: "./class-schedule",
   },
   {
+    id: 2,
     title: "Fit Perx",
     src: "https://fitathletic.com/wp-content/uploads/2021/09/Fit-Perx.jpg",
     description: "Let your membership pay for itself",
@@ -15,6 +17,7 @@ export const featured = [
     href: "./benefits",
   },
   {
+    id: 3,
     title: "High-End Clubs, Equipment & Amenities",
     src: "https://fitathletic.com/wp-content/uploads/2021/09/High-End.jpg",
     description: "Built to inspire",
@@ -22,6 +25,7 @@ export const featured = [
     href: "./locations",
   },
   {
+    id: 4,
     title: "Results-Driven Personal Training",
     src: "https://fitathletic.com/wp-content/uploads/2022/04/Results-Driven-Personal-Training.jpg",
     description:

@@ -33,7 +33,7 @@ function Page() {
             <Tab.Panel key={idx} className={classNames("mt-8 ")}>
               <ul className="md:grid md:grid-cols-2 gap-8 space-y-4 md:space-y-0">
                 {posts.map((post) => (
-                  <ClassScheduleCard {...post} />
+                  <ClassScheduleCard key={post.id} {...post} />
                 ))}
               </ul>
             </Tab.Panel>

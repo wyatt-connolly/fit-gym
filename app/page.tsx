@@ -1,6 +1,4 @@
-import { motion } from "framer-motion";
 import FeaturedCard from "./components/FeaturedCard";
-
 import { featured } from "@/data/featured";
 import { reviews } from "@/data/reviews";
 import Testimonial from "./components/Testimonial";
@@ -11,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div className="relative flex items-center justify-center h-[calc(100vh_-_224px)] sm:h-[calc(100vh_-_136px)] overflow-hidden">
+      <div className="relative flex items-center justify-center h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] overflow-hidden">
         <div className="relative z-20 text-3xl sm:text-5xl lg:text-8xl font-extrabold text-white flex items-center space-x-8">
           <p className="p-2 sm:p-6 lg:p-8 border-solid border-4 border-white rounded-full">
             fit
@@ -34,7 +32,7 @@ export default function Home() {
       <section className="bg-gray-50">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:py-56 lg:items-center">
           <div className="mx-auto text-center">
-            <h2 className="text-3xl sm:text-5xl lg:text-8xl font-extrabold ">
+            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold ">
               <AnimatedTextCharacter text="REINVENT" />
               <AnimatedTextCharacter text="YOUR LIFE WITH FIT" />
             </h2>
@@ -43,49 +41,41 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
+              <Link
                 className="inline-block rounded bg-indigo-600 px-8 py-3 sm:text-md md:text-lg font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
-                href="/download"
+                href="/pricing"
               >
                 Experience Fit
-              </a>
-              <a
-                className="inline-block rounded border border-current px-8 py-3 sm:text-md md:text-lg font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
-                href="/download"
-              >
-                Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <div className="grid lg:grid-cols-2">
+      <div className="grid lg:grid-cols-2" id="learn-more">
         {featured.map((feature) => (
-          <FeaturedCard {...feature} />
+          <FeaturedCard key={feature.id} {...feature} />
         ))}
       </div>
       <section className="bg-gray-100">
         <div className="mx-auto max-w-screen-2xl px-4 py-16 lg:py-32  ">
-          <div className="items-end justify-between sm:flex">
-            <div className="max-w-xl">
-              <h2 className="text-3xl sm:text-5xl font-bold tracking-tight ">
-                Read trusted reviews from our customers
-              </h2>
+          <div className="flex-col justify-between sm:flex lg:mb-16">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight  ">
+              Read trusted reviews from our customers
+            </h2>
 
-              <p className="mt-8 max-w-lg text-gray-500">
-                Founded in Southern California in 1984, Fit continues to seek
-                innovative ways to enhance the physical and emotional well-being
-                of our increasingly diverse membership base. Today, our
-                state-of-the-art clubs span the continent, and we’re still
-                expanding. Our strong and successful growth stems from our
-                commitment to understanding and meeting the distinct needs of
-                each community we serve.
-              </p>
-            </div>
+            <p className="mt-8 max-w-lg text-gray-500">
+              Founded in Southern California in 1984, Fit continues to seek
+              innovative ways to enhance the physical and emotional well-being
+              of our increasingly diverse membership base. Today, our
+              state-of-the-art clubs span the continent, and we’re still
+              expanding. Our strong and successful growth stems from our
+              commitment to understanding and meeting the distinct needs of each
+              community we serve.
+            </p>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {reviews.map((review) => (
-              <Testimonial {...review} />
+              <Testimonial key={review.id} {...review} />
             ))}
           </div>
         </div>
@@ -107,7 +97,7 @@ export default function Home() {
             </div>
 
             <div className="lg:py-16">
-              <article className="space-y-4 text-gray-600 ">
+              <article className="space-y-4 text-gray-600 text-lg">
                 <p>
                   Our mission is to create a culture that fosters complete
                   wellness and offers an all-encompassing member experience. We
@@ -118,7 +108,7 @@ export default function Home() {
                 <p>
                   With an extraordinary oasis atmosphere, a culture that fosters
                   and encourages complete wellness, and all of the tools and
-                  training you need to see incredible results – there’s no
+                  training you need to see incredible results - there’s no
                   wonder Fit has been voted “Best Gym” every year.
                 </p>
               </article>

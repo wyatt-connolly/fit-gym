@@ -46,11 +46,7 @@ function Page() {
         </header>
         <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {trainers.map((trainer) => (
-            <TrainerCard
-              src={trainer.src}
-              name={trainer.name}
-              profession={trainer.profession}
-            />
+            <TrainerCard key={trainer.id} {...trainer} />
           ))}
         </ul>
       </div>

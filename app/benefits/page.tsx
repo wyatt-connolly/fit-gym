@@ -1,33 +1,34 @@
 import Image from "next/image";
 import Benefits from "../components/Benefits";
 import { benefits } from "@/data/benefits";
-import Input from "../components/Input";
+import Link from "next/link";
 
 function Page() {
   return (
     <div className="bg-black text-white">
-      <div className="mx-auto max-w-xl px-4 sm:px-6 lg:px-8">
-        <div className="h-[calc(100vh_-_224px)] sm:h-[calc(100vh_-_136px)] grid place-content-center">
-          <div className="lg:py-24 ">
-            <h2 className="text-3xl font-bold sm:text-4xl text-white ">
-              JOIN THE COLLECTIVE. POWER YOUR PURSUIT.
-            </h2>
-            <p className="mt-4 text-white">
-              Stream live and on-demand classes from the unrivaled collective,
-              and be transported to the front row of className—wherever you are,
-              whenever you’re ready. Unlimited access is included with your Fit
-              membership.
-            </p>
-            <button className="mt-4 inline-block rounded border border-white bg-black px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-black focus:ring-4 focus:ring-primary-200  focus:outline-none  ">
-              Claim your free trial
-            </button>
-          </div>
+      <div className="h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] grid place-content-center mx-auto max-w-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
+        <div className="lg:py-24 ">
+          <h2 className="text-3xl font-bold sm:text-4xl text-white ">
+            JOIN THE COLLECTIVE. POWER YOUR PURSUIT.
+          </h2>
+          <p className="mt-4 text-white">
+            Stream live and on-demand classes from the unrivaled collective, and
+            be transported to the front row of className—wherever you are,
+            whenever you’re ready. Unlimited access is included with your Fit
+            membership.
+          </p>
+          <Link
+            className="mt-4 inline-block rounded border border-white bg-black px-12 py-3 text-sm font-medium text-white hover:bg-white hover:text-black focus:ring-4 focus:ring-primary-200  focus:outline-none"
+            href="/pricing"
+          >
+            Join Fit
+          </Link>
         </div>
       </div>{" "}
       <section>
-        <div className=" py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 ">
-          <div className="max-w-xl">
-            <h2 className="text-3xl font-bold sm:text-4xl">
+        <div className=" pb-8 sm:pb-12 lg:pb-16 px-4 sm:px-6 lg:px-8 ">
+          <div className="text-center max-w-xl mx-auto">
+            <h2 className="text-3xl font-bold sm:text-4xl ">
               MEMBERSHIP WITH BENEFITS
             </h2>
 
@@ -40,12 +41,12 @@ function Page() {
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
             {benefits.map((benefit) => (
-              <Benefits {...benefit} />
+              <Benefits key={benefit.id} {...benefit} />
             ))}
           </div>
         </div>
       </section>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl  px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
             <p className="max-w-xl text-lg">
