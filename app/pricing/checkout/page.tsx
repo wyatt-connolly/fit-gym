@@ -2,24 +2,53 @@
 
 import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-interface IFormInput {
+export interface IFormInput {
   firstName: string;
   lastName: string;
   zipCode: any;
   phoneNumber: number;
   email: string;
 }
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 function Page() {
+  const [submitValue, setSubmitValue] = usePrettyPrintedState();
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm<IFormInput>();
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<IFormInput> = async (data, e) => {
+    await sleep(2000);
+    if (data) {
+      console.log(data);
+      toast.success("Please check your email to confirm membership.");
+      e.target.reset(); // reset after form submit
+    } else {
+      alert("There is an error");
+    }
+    setSubmitValue(data);
+  };
 
   return (
     <div className="lg:h-[calc(100vh_-_136px)] mx-auto max-w-screen-xl px-4 py-8 flex justify-center items-center">
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <div className=" w-full xl:w-3/4 lg:w-11/12 flex justify-center gap-16">
         <div className=" relative w-full rounded-l-lg hidden lg:block">
           <Image

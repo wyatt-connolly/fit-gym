@@ -7,8 +7,8 @@ import GuestPassModal from "./GuestPassModal";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 
 const navLinks = [
-  { title: "Class Schedule", href: "/class-schedule" },
   { title: "Benefits", href: "/benefits" },
+  { title: "Class Schedule", href: "/class-schedule" },
   { title: "Locations", href: "/locations" },
   { title: "Trainers", href: "/trainers" },
 ];

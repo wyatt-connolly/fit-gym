@@ -1,6 +1,14 @@
 export const featured = [
   {
     id: 1,
+    title: "Fit Perx",
+    src: "https://fitathletic.com/wp-content/uploads/2021/09/Fit-Perx.jpg",
+    description: "Let your membership pay for itself",
+    button: "View Our Benefits",
+    href: "./benefits",
+  },
+  {
+    id: 2,
     title: "Premium Fitness Classes",
     src: "https://fitathletic.com/wp-content/uploads/2021/09/woman-yoga-pose.jpg",
     description:
@@ -8,14 +16,7 @@ export const featured = [
     button: "View Class Schedule",
     href: "./class-schedule",
   },
-  {
-    id: 2,
-    title: "Fit Perx",
-    src: "https://fitathletic.com/wp-content/uploads/2021/09/Fit-Perx.jpg",
-    description: "Let your membership pay for itself",
-    button: "View Our Benefits",
-    href: "./benefits",
-  },
+
   {
     id: 3,
     title: "High-End Clubs, Equipment & Amenities",
