@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import TrainerCard from "../components/TrainerCard";
-import FAQ from "../components/FAQ";
+import { faq } from "@/data/faq";
 import { trainers } from "@/data/trainers";
+import FAQ from "../components/Faq";
 
 function Page() {
   return (
@@ -54,7 +55,9 @@ function Page() {
         <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
           Frequently Asked Questions
         </h2>
-        <FAQ />
+        <div className="mt-8 space-y-4">
+          <FAQ />
+        </div>
       </div>
     </div>
   );

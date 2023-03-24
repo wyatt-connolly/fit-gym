@@ -1,6 +1,6 @@
 import FeaturedCard from "./components/FeaturedCard";
 import { featured } from "@/data/featured";
-import { reviews } from "@/data/reviews";
+import { testimonials } from "@/data/testimonials";
 import Testimonial from "./components/Testimonial";
 import AnimatedTextCharacter from "./components/AnimatedTextCharacter";
 import Link from "next/link";
@@ -74,8 +74,8 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {reviews.map((review) => (
-              <Testimonial key={review.id} {...review} />
+            {testimonials.map((testimonial) => (
+              <Testimonial key={testimonial.id} {...testimonial} />
             ))}
           </div>
         </div>

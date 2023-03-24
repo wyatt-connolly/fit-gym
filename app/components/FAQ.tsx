@@ -1,16 +1,17 @@
 "use client";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
+
+import React from "react";
 import { Disclosure } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import { faq } from "@/data/faq";
 
 function FAQ() {
   return (
-    <div className="mt-8 space-y-4">
+    <div>
       {faq.map((index) => (
-        <Disclosure>
+        <Disclosure key={index.id}>
           {({ open }) => (
             <>
-              {" "}
               <Disclosure.Button className="flex w-full justify-between rounded-lg p-4 font-medium text-gray-900  cursor-pointer bg-gray-50">
                 {index.question}
                 <ChevronUpIcon

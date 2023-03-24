@@ -2,7 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
-function ClassScheduleCard({ id, title, time, trainer }) {
+type ClassScheduleCardProps = {
+  id: number;
+  title: string;
+  time: string;
+  trainer: string;
+};
+function ClassScheduleCard({ id, title, time, trainer }: ClassScheduleCardProps) {
   return (
     <Link
       href="/pricing"

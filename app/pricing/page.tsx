@@ -1,5 +1,5 @@
 import React from "react";
-import { memberships } from "@/data/pricing";
+import { pricing } from "@/data/pricing";
 import PricingCard from "../components/PricingCard";
 
 function Page() {
@@ -14,23 +14,9 @@ function Page() {
         </p>
       </div>
       <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 lg:gap-10 lg:space-y-0">
-        <PricingCard
-          membership="10 Day Membership"
-          price="120"
-          listItems={memberships.dayMembership}
-        />
-        <PricingCard
-          membership="All Club - Results"
-          price="170"
-          monthly
-          listItems={memberships.allClubMembership}
-        />
-        <PricingCard
-          membership="One Club - Results"
-          price="140"
-          monthly
-          listItems={memberships.oneClubMembership}
-        />
+        {pricing.map((membership) => (
+          <PricingCard key={membership.id} {...membership} />
+        ))}
       </div>
     </div>
   );

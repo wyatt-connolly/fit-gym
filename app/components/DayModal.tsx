@@ -3,7 +3,7 @@ import { useState, Fragment } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import PricingCard from "./PricingCard";
 import { Dialog, Transition } from "@headlessui/react";
-import { memberships } from "@/data/pricing";
+import { pricing } from "@/data/pricing";
 
 function DayModal() {
   let [isOpen, setIsOpen] = useState(false);
@@ -57,9 +57,9 @@ function DayModal() {
                   </button>
 
                   <PricingCard
-                    membership="10 Day Membership"
+                    title="10 Day Membership"
                     price="120"
-                    listItems={memberships.dayMembership}
+                    listItems={pricing[0].listItems}
                     onClick={closeModal}
                   />
                 </Dialog.Panel>

@@ -1,4 +1,4 @@
-export const reviews = [
+export const testimonials = [
   {
     id: 1,
     title: "Amazing customer service.",

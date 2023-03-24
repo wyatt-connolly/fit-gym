@@ -1,7 +1,13 @@
 "use client";
 import { StarIcon } from "@heroicons/react/20/solid";
 
-function Testimonial({ title, review, person }) {
+type TestimonialProps = {
+  title: string;
+  review: string;
+  person: string;
+};
+
+function Testimonial({ title, review, person }: TestimonialProps) {
   return (
     <blockquote className="flex h-full flex-col justify-between bg-white p-12">
       <div className="animate-container">

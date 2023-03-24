@@ -2,7 +2,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
-function FeaturedCard({ title, src, description, button, href }) {
+type FeaturedCardProps = {
+  title: string;
+  src: string;
+  description: string;
+  button: string;
+  href: string;
+};
+function FeaturedCard({
+  title,
+  src,
+  description,
+  button,
+  href,
+}: FeaturedCardProps) {
   return (
     <div>
       <Link href={href} className="relative block group">

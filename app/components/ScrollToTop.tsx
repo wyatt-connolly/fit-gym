@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/solid";
 
-const classNames = (...classes) => {
+const classNames = (...classes: any) => {
   return classes.filter(Boolean).join(" ");
 };
 function ScrollToTop() {

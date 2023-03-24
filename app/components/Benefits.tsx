@@ -1,6 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-function Benefits({ icon, title, body }) {
+type BenefitsProps = {
+  icon: ReactNode;
+  title: string;
+  body: string;
+};
+function Benefits({ icon, title, body }: BenefitsProps) {
   return (
     <div className="flex items-start gap-4">
       <span className="shrink-0 rounded-lg bg-gray-800 p-4">{icon}</span>

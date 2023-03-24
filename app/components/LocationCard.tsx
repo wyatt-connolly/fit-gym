@@ -5,7 +5,13 @@ import Link from "next/link";
 import { ArrowLongRightIcon, StarIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
-function LocationCard({ src, city, state, rating }) {
+type LocationCardProps = {
+  src: string;
+  city: string;
+  state: string;
+  rating: string;
+};
+function LocationCard({ src, city, state, rating }: LocationCardProps) {
   return (
     <Link
       href="/pricing"

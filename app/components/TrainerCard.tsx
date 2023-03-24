@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-function TrainerCard({ src, name, profession }) {
+type TrainerCardProps = {
+  src: string;
+  name: string;
+  profession: string;
+};
+function TrainerCard({ src, name, profession }: TrainerCardProps) {
   return (
     <li>
       <a href="#" className="group block overflow-hidden">

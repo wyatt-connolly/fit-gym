@@ -3,9 +3,11 @@ import { useState, Fragment } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import PricingCard from "./PricingCard";
 import { Dialog, Transition, Menu } from "@headlessui/react";
-import { memberships } from "@/data/pricing";
 
-function GuestPassModal({ mobile }) {
+type GuestPassModalProps = {
+  mobile?: boolean;
+};
+function GuestPassModal({ mobile }: GuestPassModalProps) {
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
