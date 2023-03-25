@@ -1,5 +1,5 @@
 "use client";
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import PricingCard from "./PricingCard";
 import { Dialog, Transition, Menu } from "@headlessui/react";
@@ -24,7 +24,6 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 function GuestPassModal({ mobile }: GuestPassModalProps) {
   const router = useRouter();
   let [isOpen, setIsOpen] = useState(false);
-  const [submitValue, setSubmitValue] = usePrettyPrintedState("");
 
   function closeModal() {
     setIsOpen(false);
@@ -36,21 +35,31 @@ function GuestPassModal({ mobile }: GuestPassModalProps) {
 
   const {
     register,
-    formState: { errors },
+    reset,
     handleSubmit,
+    formState,
+    formState: { errors, isSubmitSuccessful },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = async (data, e) => {
+  const onSubmit: SubmitHandler<IFormInput> = async (data, e: any) => {
     await sleep(2000);
     if (data) {
       console.log(data);
+      data;
       toast.success("A team member will contact you shortly.");
+      e.target.reset(); // reset after form submit
       setIsOpen(false);
     } else {
       alert("There is an error");
     }
-    setSubmitValue(data);
+    data;
   };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset({ fullName: "", email: "", phoneNumber: undefined });
+    }
+  }, [formState, reset]);
 
   return (
     <>

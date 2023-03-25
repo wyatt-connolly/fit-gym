@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
@@ -19,7 +18,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function Page() {
   const router = useRouter();
-  const [submitValue, setSubmitValue] = usePrettyPrintedState("");
+
   const {
     register,
     formState: { errors },
@@ -29,13 +28,13 @@ function Page() {
     await sleep(2000);
     if (data) {
       console.log(data);
+      e.target.reset(); // reset after form submit
       router.push("/");
       toast.success("Please check your email to confirm membership.");
-      e.target.reset(); // reset after form submit
     } else {
       alert("There is an error");
     }
-    setSubmitValue(data);
+    data;
   };
 
   return (
