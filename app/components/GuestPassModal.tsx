@@ -24,6 +24,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 function GuestPassModal({ mobile }: GuestPassModalProps) {
   const router = useRouter();
   let [isOpen, setIsOpen] = useState(false);
+  const [submitValue, setSubmitValue] = usePrettyPrintedState("");
 
   function closeModal() {
     setIsOpen(false);
@@ -32,8 +33,6 @@ function GuestPassModal({ mobile }: GuestPassModalProps) {
   function openModal() {
     setIsOpen(true);
   }
-
-  const [submitValue, setSubmitValue] = usePrettyPrintedState();
 
   const {
     register,

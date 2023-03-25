@@ -21,7 +21,7 @@ export interface IFormInput {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 function Page() {
-  const [submitValue, setSubmitValue] = usePrettyPrintedState();
+  const [submitValue, setSubmitValue] = usePrettyPrintedState("");
 
   const {
     register,
