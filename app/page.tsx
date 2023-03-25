@@ -20,12 +20,12 @@ export default function Home() {
           </p>
         </div>
         <video
-          src="https:\/\/fitathletic.com\/wp-content\/uploads\/2023\/01\/FIT-Drone-Compilation.mp4"
           autoPlay
           muted
           loop
           className="absolute z-10 w-auto min-w-full min-h-full max-w-none object-contain brightness-75"
         >
+          <source src="https:\/\/fitathletic.com\/wp-content\/uploads\/2023\/01\/FIT-Drone-Compilation.mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
