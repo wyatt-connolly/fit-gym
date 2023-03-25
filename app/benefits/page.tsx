@@ -4,7 +4,7 @@ import Benefits from "../components/Benefits";
 import { benefits } from "@/data/benefits";
 import Particles from "react-particles";
 import Link from "next/link";
-import { useCallback } from "react";
+import { MouseEvent, useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import ParticlesBackground from "../components/Particles";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -29,7 +29,7 @@ function Page() {
     handleSubmit,
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = async (data, e) => {
+  const onSubmit: SubmitHandler<IFormInput> = async (data, e: any) => {
     await sleep(2000);
     if (data) {
       console.log(data);
