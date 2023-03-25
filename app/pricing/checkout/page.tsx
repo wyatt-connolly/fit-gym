@@ -5,7 +5,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 export interface IFormInput {
   firstName: string;
@@ -19,7 +19,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function Page() {
   const router = useRouter();
-  const [submitValue, setSubmitValue] = usePrettyPrintedState();
+  const [submitValue, setSubmitValue] = usePrettyPrintedState("");
   const {
     register,
     formState: { errors },
