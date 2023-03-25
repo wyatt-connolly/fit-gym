@@ -165,12 +165,10 @@ function Page() {
               <div>
                 <textarea
                   className={
-                    `w-full block rounded border p-3 text-sm` +
+                    `w-full block rounded border p-3 pb-12  text-sm` +
                     `${errors.message && "border-red-500"}`
                   }
                   placeholder="Message"
-                  rows="8"
-                  type="text"
                   {...register("message", { required: true, maxLength: 500 })}
                 ></textarea>
                 {errors.message && (
