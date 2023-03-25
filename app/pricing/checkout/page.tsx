@@ -30,10 +30,10 @@ function Page() {
       console.log(data);
       e.target.reset(); // reset after form submit
       router.push("/");
-      toast.success("Please check your email to confirm membership.");
     } else {
       alert("There is an error");
     }
+    toast.success("Please check your email to confirm membership.");
     data;
   };
 

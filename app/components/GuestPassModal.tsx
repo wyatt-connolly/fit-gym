@@ -47,7 +47,6 @@ function GuestPassModal({ mobile }: GuestPassModalProps) {
       console.log(data);
       data;
       toast.success("A team member will contact you shortly.");
-      e.target.reset(); // reset after form submit
       setIsOpen(false);
     } else {
       alert("There is an error");
