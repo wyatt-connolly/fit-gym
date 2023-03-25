@@ -21,6 +21,7 @@ export default function Home() {
         </div>
         <video
           autoPlay
+          playsInline
           muted
           loop
           className="absolute z-10 w-auto min-w-full min-h-full max-w-none object-contain brightness-75"
