@@ -33,8 +33,8 @@ export default function Home() {
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:py-56 lg:items-center">
           <div className="mx-auto text-center">
             <h2 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold ">
-              <AnimatedTextCharacter text="REINVENT" />
-              <AnimatedTextCharacter text="YOUR LIFE WITH FIT" />
+              REINVENT
+              <br /> YOUR LIFE WITH FIT
             </h2>
             <p className="mt-4 text-xl sm:text-2xl sm:leading-loose font-semibold ">
               YOUR LIFE WITH FIT. VOTED BEST GYM EVERY YEAR
