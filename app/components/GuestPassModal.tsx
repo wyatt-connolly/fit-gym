@@ -8,6 +8,12 @@ import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+type GuestPassModalProps = {
+  isOpen: boolean;
+  setIsOpen: Function;
+  closeModal: Function;
+};
+
 export interface IFormInput {
   fullName: string;
   email: string;
@@ -16,7 +22,11 @@ export interface IFormInput {
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function GuestPassModal({ isOpen, setIsOpen, closeModal }) {
+function GuestPassModal({
+  isOpen,
+  setIsOpen,
+  closeModal,
+}: GuestPassModalProps) {
   const {
     register,
     reset,
