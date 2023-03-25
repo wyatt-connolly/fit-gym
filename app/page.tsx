@@ -2,7 +2,7 @@ import FeaturedCard from "./components/FeaturedCard";
 import { featured } from "@/data/featured";
 import { testimonials } from "@/data/testimonials";
 import Testimonial from "./components/Testimonial";
-import AnimatedTextCharacter from "./components/AnimatedTextCharacter";
+
 import Link from "next/link";
 import Image from "next/image";
 
