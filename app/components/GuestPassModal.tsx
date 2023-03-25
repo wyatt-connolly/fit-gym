@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 type GuestPassModalProps = {
   isOpen: boolean;
   setIsOpen: Function;
-  closeModal: Function;
+  closeModal: boolean;
 };
 
 export interface IFormInput {
