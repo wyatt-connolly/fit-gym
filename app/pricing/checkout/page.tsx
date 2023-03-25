@@ -25,7 +25,7 @@ function Page() {
     formState: { errors },
     handleSubmit,
   } = useForm<IFormInput>();
-  const onSubmit: SubmitHandler<IFormInput> = async (data, e) => {
+  const onSubmit: SubmitHandler<IFormInput> = async (data, e: any) => {
     await sleep(2000);
     if (data) {
       console.log(data);
