@@ -5,7 +5,7 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 type PricingCardProps = {
   title: string;
   price: string;
-  monthly: null | string;
+  monthly?: null | string;
   listItems: string[];
   onClick?: () => void;
 };
