@@ -3,7 +3,7 @@ import Image from "next/image";
 import TrainerCard from "../components/TrainerCard";
 import { faq } from "@/data/faq";
 import { trainers } from "@/data/trainers";
-import FAQ from "../components/Faq";
+import Faq from "../components/Faq";
 
 function Page() {
   return (
@@ -56,7 +56,7 @@ function Page() {
           Frequently Asked Questions
         </h2>
         <div className="mt-8 space-y-4">
-          <FAQ />
+          <Faq />
         </div>
       </div>
     </div>

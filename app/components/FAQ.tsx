@@ -5,7 +5,7 @@ import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 import { faq } from "@/data/faq";
 
-function FAQ() {
+function Faq() {
   return (
     <div>
       {faq.map((index) => (
@@ -29,4 +29,4 @@ function FAQ() {
   );
 }
 
-export default FAQ;
+export default Faq;
