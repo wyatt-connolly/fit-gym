@@ -3,7 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function AnimatedTextCharacter({ text }) {
+function AnimatedTextCharacter(props: any) {
+  const { text } = props;
   // splitting text into letters
   const letters = Array.from(text);
 
