@@ -7,7 +7,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRouter } from "next/navigation";
 
 export interface IFormInput {
   fullName: string;
@@ -15,24 +14,9 @@ export interface IFormInput {
   phoneNumber: number;
 }
 
-type GuestPassModalProps = {
-  mobile?: boolean;
-};
-
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function GuestPassModal({ mobile }: GuestPassModalProps) {
-  const router = useRouter();
-  let [isOpen, setIsOpen] = useState(false);
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
+function GuestPassModal({ isOpen, setIsOpen, closeModal }) {
   const {
     register,
     reset,
@@ -62,21 +46,6 @@ function GuestPassModal({ mobile }: GuestPassModalProps) {
 
   return (
     <>
-      {mobile ? (
-        <button
-          className="text-left bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500 cursor-pointer"
-          onClick={openModal}
-        >
-          Guest Pass
-        </button>
-      ) : (
-        <button
-          className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500 cursor-pointer"
-          onClick={openModal}
-        >
-          Guest Pass
-        </button>
-      )}
       <ToastContainer
         position="top-center"
         autoClose={5000}

@@ -45,7 +45,7 @@ function Page() {
     <div className="text-black">
       <ParticlesBackground />
 
-      <div className="h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] grid place-content-center mx-auto max-w-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
+      <div className="h-[calc(100vh_-_224px)] min-[466px]:h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] md:h-[calc(100vh_-_136px)] grid place-content-center mx-auto max-w-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
         <ToastContainer
           position="top-center"
           autoClose={5000}

@@ -5,6 +5,7 @@ import { Dialog, Transition, Menu } from "@headlessui/react";
 import DayModal from "./DayModal";
 import GuestPassModal from "./GuestPassModal";
 import { Bars3Icon } from "@heroicons/react/20/solid";
+import { useState } from "react";
 
 const navLinks = [
   { title: "Benefits", href: "/benefits" },
@@ -14,8 +15,22 @@ const navLinks = [
 ];
 
 function Navbar() {
+  let [isOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
   return (
     <div>
+      <GuestPassModal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        closeModal={closeModal}
+      />
       <div className="bg-indigo-600 px-4 py-3 text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
         <header aria-label="Site Header" className="shadow-sm">
           <p className="text-center font-medium sm:text-left">
@@ -46,8 +61,12 @@ function Navbar() {
           </nav>
 
           <div className="hidden flex-1 items-center justify-end gap-4 sm:flex">
-            <GuestPassModal />
-
+            <button
+              className="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500 cursor-pointer"
+              onClick={openModal}
+            >
+              Guest Pass
+            </button>
             <Link
               className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white cursor-pointer"
               href="/pricing"
@@ -102,7 +121,12 @@ function Navbar() {
                     )}
                   </Menu.Item>
                   <Menu.Item>
-                    <GuestPassModal mobile />
+                    <button
+                      className="text-left bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500 cursor-pointer"
+                      onClick={openModal}
+                    >
+                      Guest Pass
+                    </button>
                   </Menu.Item>
                 </div>
               </Menu.Items>

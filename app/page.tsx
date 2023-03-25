@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div className="relative flex items-center justify-center h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] overflow-hidden">
+      <div className="relative flex items-center justify-center h-[calc(100vh_-_224px)] min-[466px]:h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] md:h-[calc(100vh_-_136px)] overflow-hidden">
         <div className="relative z-20 text-3xl sm:text-5xl lg:text-8xl font-extrabold text-white flex items-center space-x-8">
           <p className="p-2 sm:p-6 lg:p-8 border-solid border-4 border-white rounded-full">
             fit
