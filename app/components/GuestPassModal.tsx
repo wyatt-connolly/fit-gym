@@ -7,6 +7,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/navigation";
 
 export interface IFormInput {
   fullName: string;
@@ -21,6 +22,7 @@ type GuestPassModalProps = {
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function GuestPassModal({ mobile }: GuestPassModalProps) {
+  const router = useRouter();
   let [isOpen, setIsOpen] = useState(false);
 
   function closeModal() {
@@ -44,7 +46,7 @@ function GuestPassModal({ mobile }: GuestPassModalProps) {
     if (data) {
       console.log(data);
       toast.success("A team member will contact you shortly.");
-      e.target.reset(); // reset after form submit
+      setIsOpen(false);
     } else {
       alert("There is an error");
     }
