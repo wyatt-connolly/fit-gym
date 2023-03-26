@@ -41,7 +41,7 @@ function GuestPassModal({
     if (data) {
       console.log(data);
       data;
-      toast.success("A team member will contact you shortly.");
+      await toast.success("A team member will contact you shortly.");
       setIsOpen(false);
     } else {
       alert("There is an error");

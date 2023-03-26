@@ -33,7 +33,7 @@ function Page() {
     await sleep(2000);
     if (data) {
       console.log(data);
-      toast.success("Your message has been recieved.");
+      await toast.success("Your message has been recieved.");
       e.target.reset(); // reset after form submit
     } else {
       alert("There is an error");
