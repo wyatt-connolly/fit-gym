@@ -71,7 +71,7 @@ const ParticlesBackground = () => {
                 type: "circle",
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: "trail",
                 parallax: {
                   enable: false,

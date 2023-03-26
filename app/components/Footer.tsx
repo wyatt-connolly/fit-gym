@@ -6,7 +6,7 @@ function Footer() {
     <div>
       <footer aria-label="Site Footer" className="bg-black">
         <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8">
-          <div className="lg:flex lg:items-center lg:justify-between">
+          <div className="flex flex-col lg:flex-row items-center lg:justify-between">
             <div className="flex justify-center  text-teal-600 sm:justify-start">
               <div className="relative h-16 w-16 object-cover overflow-hidden lg:h-32 lg:w-32">
                 <Image
@@ -22,7 +22,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 border-t border-gray-100 pt-16 md:grid-cols-4 lg:grid-cols-6">
+          <div className="mt-16 grid grid-cols-2 gap-8 border-t border-gray-100 pt-16 md:grid-cols-4 lg:grid-cols-6">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-white">About Us</p>
 
@@ -206,7 +206,7 @@ function Footer() {
               </nav>
             </div>
 
-            <div className="text-center sm:text-left md:col-span-4 lg:col-span-2">
+            <div className="hidden sm:block text-center sm:text-left md:col-span-4 lg:col-span-2">
               <p className="text-lg font-medium text-white">Stay in Touch</p>
 
               <div className="mx-auto mt-8 max-w-md sm:ml-0">

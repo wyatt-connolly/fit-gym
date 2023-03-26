@@ -29,7 +29,7 @@ export default function Home() {
         </video>
       </div>
       <section className="bg-gray-50">
-        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:py-56 lg:items-center">
+        <div className="mx-auto max-w-screen-xl px-4 py-20 md:py-36 lg:flex lg:py-56 lg:items-center">
           <div className="mx-auto text-center">
             <h2 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold ">
               REINVENT
@@ -57,8 +57,8 @@ export default function Home() {
       </div>
       <section className="bg-gray-100">
         <div className="mx-auto max-w-screen-2xl px-4 py-16 lg:py-32  ">
-          <div className="flex-col justify-between sm:flex lg:mb-16">
-            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight  ">
+          <div className="flex-col justify-between sm:flex lg:mb-16 items-center text-center">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight ">
               Read trusted reviews from our customers
             </h2>
 

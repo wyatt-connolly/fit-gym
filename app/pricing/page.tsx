@@ -11,7 +11,7 @@ function Page() {
         </h2>
         <p className="font-light text-gray-500 sm:text-xl ">Choose your plan</p>
       </div>
-      <div className="space-y-8 lg:grid lg:grid-cols-3 gap-2 lg:gap-10 lg:space-y-0">
+      <div className="space-y-4 lg:grid lg:grid-cols-3 gap-2 lg:gap-10 lg:space-y-0">
         {pricing.map((membership) => (
           <PricingCard key={membership.id} {...membership} />
         ))}

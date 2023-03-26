@@ -29,14 +29,16 @@ function FeaturedCard({
         </div>
 
         <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-          <div className="bg-black px-4 py-4 ">
-            <h3 className="text-2xl font-medium text-white">{title}</h3>
+          <div className="bg-black p-4 ">
+            <h3 className="text-xl md:text-2xl font-medium text-white mb-3 sm:mb-0">
+              {title}
+            </h3>
 
-            <p className="mb-3 mt-1.5 max-w-[40ch] text-lg text-white">
+            <p className="hidden sm:block mb-3 mt-1.5 max-w-[40ch] text-md md:text-lg text-white">
               {description}
             </p>
 
-            <button className=" group relative inline-flex items-center overflow-hidden rounded bg-white px-8 py-3 text-black focus:outline-none focus:ring ">
+            <button className=" group relative inline-flex items-center overflow-hidden rounded bg-white px-6 md:px-8 py-2 md:py-3 text-black focus:outline-none focus:ring ">
               <ArrowLongRightIcon className="h-5 w-5 absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4" />
 
               <span className="text-sm font-medium transition-all group-hover:mr-4">
