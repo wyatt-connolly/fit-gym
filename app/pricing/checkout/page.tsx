@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useRouter } from "next/navigation";
 
 export interface IFormInput {
   firstName: string;
@@ -17,8 +16,6 @@ export interface IFormInput {
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function Page() {
-  const router = useRouter();
-
   const {
     register,
     formState: { errors },
@@ -29,7 +26,7 @@ function Page() {
     if (data) {
       console.log(data);
       e.target.reset(); // reset after form submit
-      await router.push("/");
+
       await toast.success("Please check your email to confirm membership.");
     } else {
       alert("There is an error");
