@@ -29,7 +29,7 @@ function Page() {
     if (data) {
       console.log(data);
       e.target.reset(); // reset after form submit
-      router.push("/");
+      await router.push("/");
       await toast.success("Please check your email to confirm membership.");
     } else {
       alert("There is an error");
