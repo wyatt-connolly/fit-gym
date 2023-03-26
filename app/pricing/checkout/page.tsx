@@ -64,10 +64,10 @@ function Page() {
         <div className="w-full lg:w-7/12 bg-white  rounded-lg lg:rounded-l-none">
           <h3 className="text-2xl text-center">Review & Confirm Membership</h3>
           <form
-            className="bg-white rounded pt-6"
+            className="bg-white rounded pt-6 px-6 lg:px-0"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <div className="flex flex-col sm:flex-row sm:space-x-4 lg:space-x-0 lg:flex-col  ">
+            <div className="flex flex-col sm:flex-row sm:space-x-4 lg:space-x-0 lg:flex-col">
               <div className="w-full ">
                 <label
                   className="block mb-2 text-sm font-bold text-gray-700"
