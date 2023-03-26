@@ -115,7 +115,7 @@ function GuestPassModal({
                     </div>
                     <div>
                       <input
-                        type="text"
+                        type="email"
                         className="pb-4 block border border-grey-light w-full p-3 rounded"
                         placeholder="Email"
                         {...register("email", {

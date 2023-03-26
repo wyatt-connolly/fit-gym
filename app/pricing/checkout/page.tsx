@@ -26,7 +26,6 @@ function Page() {
     if (data) {
       console.log(data);
       e.target.reset(); // reset after form submit
-
       await toast.success("Please check your email to confirm membership.");
     } else {
       alert("There is an error");
