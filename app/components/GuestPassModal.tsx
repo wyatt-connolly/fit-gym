@@ -7,11 +7,12 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Dispatch, SetStateAction } from "react";
 
 type GuestPassModalProps = {
   isOpen: boolean;
-  setIsOpen: Function;
-  closeModal: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+  closeModal: (value: boolean) => void;
 };
 
 export interface IFormInput {
@@ -94,12 +95,6 @@ function GuestPassModal({
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="relative w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-12 text-left align-middle shadow-xl transition-all">
-                  <button
-                    onClick={closeModal}
-                    className="absolute top-4 right-4"
-                  >
-                    <XMarkIcon className="h-6 w-6" />
-                  </button>
                   <h1 className="mb-8 text-3xl text-center">Guest Pass</h1>
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div>
