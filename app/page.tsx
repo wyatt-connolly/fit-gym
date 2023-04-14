@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <section className="bg-gray-100">
         <div className="mx-auto max-w-screen-2xl px-4 py-16 lg:py-32  ">
-          <div className="flex-col justify-between sm:flex lg:mb-16 items-center text-center">
+          <div className="flex-col justify-between sm:flex lg:mb-16 items-start ">
             <h2 className="text-3xl sm:text-5xl font-bold tracking-tight ">
               Read trusted reviews from our customers
             </h2>
