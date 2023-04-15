@@ -82,7 +82,7 @@ export default function Home() {
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold sm:text-5xl">OUR PHILOSOPHY</h2>
+            <h2 className="text-3xl font-bold sm:text-5xl">Our Philosophy</h2>
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
