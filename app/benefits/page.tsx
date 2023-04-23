@@ -59,7 +59,7 @@ function Page() {
           theme="dark"
         />
         <div className="lg:py-24 ">
-          <h2 className="font-bold text-3xl lg:text-5xl ">
+          <h2 className="text-3xl font-bold lg:text-5xl ">
             JOIN THE COLLECTIVE. POWER YOUR PURSUIT.
           </h2>
           <p className="mt-4 lg:text-lg ">
@@ -69,7 +69,7 @@ function Page() {
             membership.
           </p>
           <Link
-            className="mt-4 inline-block rounded border border-white bg-black px-12 py-3 text-sm font-medium text-white hover:bg-gray-700  focus:ring-4 focus:ring-primary-200  focus:outline-none"
+            className="inline-block px-12 py-3 mt-4 text-sm font-medium text-white bg-black border border-white rounded hover:bg-gray-700 focus:ring-4 focus:ring-primary-200 focus:outline-none"
             href="/pricing"
           >
             Join Fit
@@ -77,8 +77,8 @@ function Page() {
         </div>
       </div>
       <section>
-        <div className=" pb-8 sm:pb-12 lg:pb-16 px-4 sm:px-6 lg:px-8 ">
-          <div className="text-center max-w-xl mx-auto">
+        <div className="px-4 pb-8 sm:pb-12 lg:pb-16 sm:px-6 lg:px-8">
+          <div className="max-w-xl mx-auto text-center">
             <h2 className="text-3xl font-bold ">MEMBERSHIP WITH BENEFITS</h2>
 
             <p className="mt-4 lg:text-lg">
@@ -88,14 +88,14 @@ function Page() {
             </p>
           </div>
 
-          <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
             {benefits.map((benefit) => (
               <Benefits key={benefit.id} {...benefit} />
             ))}
           </div>
         </div>
       </section>
-      <div className="mx-auto max-w-screen-xl  px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8 sm:py-12 lg:py-16 ">
         <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
           <div className="lg:col-span-2 lg:py-12">
             <p className="max-w-xl text-lg">
@@ -104,7 +104,7 @@ function Page() {
             </p>
 
             <div className="mt-8">
-              <a className="text-2xl font-bold text-rose-600 cursor-pointer">
+              <a className="text-2xl font-bold cursor-pointer text-rose-600">
                 619 475 4450
               </a>
 
@@ -114,7 +114,7 @@ function Page() {
             </div>
           </div>
 
-          <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <div className="p-8 bg-white rounded-lg shadow-lg lg:col-span-3 lg:p-12">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <input
                 type="text"
@@ -126,7 +126,7 @@ function Page() {
                 {...register("fullName", { required: true, maxLength: 40 })}
               />
               {errors.fullName && (
-                <span className="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+                <span className="flex items-center mt-1 ml-1 text-xs font-medium tracking-wide text-red-500">
                   Full name is required
                 </span>
               )}
@@ -141,7 +141,7 @@ function Page() {
                   {...register("email", { required: true })}
                 />
                 {errors.email && (
-                  <span className="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+                  <span className="flex items-center mt-1 ml-1 text-xs font-medium tracking-wide text-red-500">
                     Email is required
                   </span>
                 )}
@@ -157,7 +157,7 @@ function Page() {
                 />
               </div>
               {errors.phoneNumber && (
-                <span className="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+                <span className="flex items-center mt-1 ml-1 text-xs font-medium tracking-wide text-red-500">
                   Phone number is required
                 </span>
               )}
@@ -172,7 +172,7 @@ function Page() {
                   {...register("message", { required: true, maxLength: 500 })}
                 ></textarea>
                 {errors.message && (
-                  <span className="flex items-center font-medium tracking-wide text-red-500 text-xs mt-1 ml-1">
+                  <span className="flex items-center mt-1 ml-1 text-xs font-medium tracking-wide text-red-500">
                     Message is required
                   </span>
                 )}
@@ -181,7 +181,7 @@ function Page() {
               <div className="mt-4">
                 <button
                   type="submit"
-                  className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto hover:bg-gray-700"
+                  className="inline-block w-full px-5 py-3 font-medium text-white bg-black rounded-lg sm:w-auto hover:bg-gray-700"
                 >
                   Send Enquiry
                 </button>
