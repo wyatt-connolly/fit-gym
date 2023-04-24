@@ -1,6 +1,6 @@
 ## About the project
 
-With a wide range of amenities and highly trained staff, Fit Gym provides fun and effective workout options to family members of all ages and interests.
+With a wide range of amenities and highly trained staff, Fit provides fun and effective workout options to all ages and interests.
 
 :point_right: Live Demo: [Fit Gym](https://fit-gym-taupe.vercel.app/)
 
