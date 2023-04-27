@@ -17,12 +17,6 @@ function DayModal() {
   }
   return (
     <>
-      <button
-        className="w-full sm:w-auto mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-medium text-indigo-600 transition hover:bg-white/90 focus:outline-none focus:ring active:text-indigo-500 sm:mt-0"
-        onClick={openModal}
-      >
-        SHOP NOW
-      </button>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child

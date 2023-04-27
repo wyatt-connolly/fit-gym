@@ -68,7 +68,7 @@ function Footer() {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">Our Services</p>
+              <p className="text-lg font-medium text-white">Locations</p>
 
               <nav aria-label="Footer Services Nav" className="mt-8">
                 <ul className="space-y-4 text-sm">
@@ -77,7 +77,7 @@ function Footer() {
                       className="text-white transition hover:text-indigo-400/75"
                       href="/"
                     >
-                      Web Development
+                      Los Angeles
                     </a>
                   </li>
 
@@ -86,7 +86,7 @@ function Footer() {
                       className="text-white transition hover:text-indigo-400/75"
                       href="/"
                     >
-                      Web Design
+                      Newport
                     </a>
                   </li>
 
@@ -95,7 +95,7 @@ function Footer() {
                       className="text-white transition hover:text-indigo-400/75"
                       href="/"
                     >
-                      Marketing
+                      San Diego
                     </a>
                   </li>
 
@@ -104,7 +104,7 @@ function Footer() {
                       className="text-white transition hover:text-indigo-400/75"
                       href="/"
                     >
-                      Google Ads
+                      Florida
                     </a>
                   </li>
                 </ul>
@@ -227,7 +227,7 @@ function Footer() {
                     />
 
                     <button
-                      className="block rounded-full bg-indigo-500 px-8 py-3 font-medium text-white transition hover:bg-indigo-600"
+                      className="block rounded-full bg-white px-8 py-3 font-medium text-gray-900 transition hover:bg-white/90"
                       type="submit"
                     >
                       Subscribe
@@ -240,7 +240,7 @@ function Footer() {
 
           <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
             <p className="text-center text-sm text-white sm:text-left">
-              Copyright &copy; 2022. All rights reserved.
+              Copyright &copy; 2023. All rights reserved.
             </p>
 
             <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">

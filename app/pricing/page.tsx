@@ -9,14 +9,12 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <div className="lg:h-[calc(100vh_-_136px)] mx-auto max-w-screen-xl px-4 py-8">
-      <div className="max-w-screen-md mx-auto mb-4 text-center md:mb-8 lg:mb-12">
-        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 ">
-          Start Here
-        </h2>
+    <div className="xl:h-[calc(100vh_-_136px)] mx-auto max-w-screen-xl px-4 py-8">
+      <div className="max-w-screen-md mx-auto mb-4 text-center md:mb-8 xl:mb-12">
+        <h2 className="mb-4 text-3xl font-bold sm:text-5xl">Start Here</h2>
         <p className="font-light text-gray-500 sm:text-xl ">Choose your plan</p>
       </div>
-      <div className="gap-2 space-y-4 lg:grid lg:grid-cols-3 lg:gap-10 lg:space-y-0">
+      <div className="gap-2 space-y-4 xl:grid xl:grid-cols-3 xl:gap-10 xl:space-y-0">
         {pricing.map((membership) => (
           <PricingCard key={membership.id} {...membership} />
         ))}

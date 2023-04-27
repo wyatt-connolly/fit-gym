@@ -8,7 +8,7 @@ type TrainerCardProps = {
 function TrainerCard({ src, name, profession }: TrainerCardProps) {
   return (
     <li>
-      <a href="#" className="group block overflow-hidden">
+      <div className="group block overflow-hidden">
         <div>
           <div className="relative h-[350px] w-full sm:h-[450px]">
             <Image
@@ -31,7 +31,7 @@ function TrainerCard({ src, name, profession }: TrainerCardProps) {
             </p>
           </div>
         </div>
-      </a>
+      </div>
     </li>
   );
 }

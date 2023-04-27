@@ -28,7 +28,7 @@ function FeaturedCard({
           />
         </div>
 
-        <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+        <div className="absolute inset-0 flex flex-col items-start justify-end p-6 ">
           <div className="bg-black p-4 ">
             <h3 className="text-xl md:text-2xl font-medium text-white mb-3 sm:mb-0">
               {title}

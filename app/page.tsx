@@ -1,7 +1,6 @@
 import FeaturedCard from "./components/FeaturedCard";
 import { featured } from "@/data/featured";
 import { testimonials } from "@/data/testimonials";
-import Testimonial from "./components/Testimonial";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -46,7 +45,7 @@ export default function Home() {
 
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <Link
-                className="inline-block px-8 py-3 font-medium text-white transition bg-indigo-600 rounded sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+                className="inline-block px-8 py-3 font-medium text-gray-100 transition bg-zinc-900 rounded sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
                 href="/pricing"
               >
                 Experience Fit
@@ -60,30 +59,6 @@ export default function Home() {
           <FeaturedCard key={feature.id} {...feature} />
         ))}
       </div>
-      <section className="bg-gray-100">
-        <div className="px-4 py-16 mx-auto max-w-screen-2xl lg:py-32 ">
-          <div className="flex-col items-center justify-between text-center sm:flex lg:mb-16">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-5xl ">
-              Read trusted reviews from our customers
-            </h2>
-
-            <p className="max-w-lg mt-8 text-gray-500">
-              Founded in Southern California in 1984, Fit continues to seek
-              innovative ways to enhance the physical and emotional well-being
-              of our increasingly diverse membership base. Today, our
-              state-of-the-art clubs span the continent, and we’re still
-              expanding. Our strong and successful growth stems from our
-              commitment to understanding and meeting the distinct needs of each
-              community we serve.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <Testimonial key={testimonial.id} {...testimonial} />
-            ))}
-          </div>
-        </div>
-      </section>
       <section>
         <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:px-8">
           <div className="max-w-3xl">
@@ -101,45 +76,64 @@ export default function Home() {
             </div>
 
             <div className="lg:py-16">
-              <article className="space-y-4 text-lg text-gray-600">
-                <p>
-                  Our mission is to create a culture that fosters complete
-                  wellness and offers an all-encompassing member experience. We
-                  set the bar when it comes to personal training, group fitness,
-                  club facilities, social events and more.
-                </p>
-                <br />
-                <p>
-                  With an extraordinary oasis atmosphere, a culture that fosters
-                  and encourages complete wellness, and all of the tools and
-                  training you need to see incredible results - there’s no
-                  wonder Fit has been voted “Best Gym” every year.
-                </p>
+              <article>
+                <div className="space-y-4 text-xl text-gray-600">
+                  <p>
+                    Our mission is to create a culture that fosters complete
+                    wellness and offers an all-encompassing member experience.
+                    We set the bar when it comes to personal training, group
+                    fitness, club facilities, social events and more.
+                  </p>
+                  <br />
+                  <p>
+                    With an extraordinary oasis atmosphere, a culture that
+                    fosters and encourages complete wellness, and all of the
+                    tools and training you need to see incredible results -
+                    there’s no wonder Fit has been voted “Best Gym” every year.
+                  </p>
+                </div>
+
+                <div className="mt-8 flex justify-center md:block">
+                  <Link
+                    className="inline-block px-8 py-3 font-medium text-gray-100 transition bg-zinc-900 rounded sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring "
+                    href="/pricing"
+                  >
+                    Experience Fit
+                  </Link>
+                </div>
               </article>
             </div>
           </div>
         </div>
       </section>
-      <section className="overflow-hidden bg-[url(https://www.24hourfitness.com/content/dam/24-hour-fitness/home/search/Search_Dsktop.jpg)] bg-cover bg-center bg-no-repeat">
-        <div className="p-8 bg-black/25 md:p-12 lg:px-16 lg:py-24">
-          <div className="text-center ">
-            <h2 className="text-3xl font-bold text-white lg:text-4xl">
-              Join Our Community
+      <section className="overflow-hidden  bg-black sm:grid sm:grid-cols-2">
+        <div className="p-8 md:p-12 lg:px-16 lg:py-2 flex flex-col justify-center">
+          <div className="mx-auto max-w-xl text-center sm:text-left ">
+            <h2 className="text-2xl font-bold text-gray-100 dark:text-white md:text-4xl">
+              JOIN OUR COMMUNITY
             </h2>
 
-            <p className="hidden text-xl text-white/90 md:mt-6 md:block md:leading-relaxed">
+            <p className="text-gray-100 md:mt-4 ">
               There Is No Better Time Than Now
             </p>
 
-            <div className="mt-4 sm:mt-8">
+            <div className="mt-8">
               <Link
+                className="inline-block px-8 py-3 font-medium text-gray-900 transition bg-white rounded sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring "
                 href="/pricing"
-                className="inline-block px-12 py-3 text-lg font-medium text-white transition bg-green-600 rounded-full hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-400"
               >
-                Join Online
+                Experience Fit
               </Link>
             </div>
           </div>
+        </div>
+        <div className="relative h-56 lg:h-96 w-full sm:h-full">
+          <Image
+            alt="Gym goer"
+            src="https://images.unsplash.com/photo-1518605360659-2aa9659ef66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1433&q=80"
+            className="object-cover"
+            fill
+          />
         </div>
       </section>
     </main>

@@ -91,7 +91,20 @@ export const classSchedule = {
       trainer: "Dana Louis",
     },
   ],
-  Friday: [],
+  Friday: [
+    {
+      id: 1,
+      title: "Soccer",
+      time: "12:00pm - 1:00pm",
+      trainer: "Christiano Ronaldo",
+    },
+    {
+      id: 2,
+      title: "Soccer",
+      time: "2:00pm - 4:00am",
+      trainer: "Lionel Messi",
+    },
+  ],
   Saturday: [
     {
       id: 1,
@@ -100,5 +113,12 @@ export const classSchedule = {
       trainer: "Dana Louis",
     },
   ],
-  Sunday: [],
+  Sunday: [
+    {
+      id: 1,
+      title: "Meditation",
+      time: "8:00am - 9:00am",
+      trainer: "Mohatma Gandhi",
+    },
+  ],
 };
