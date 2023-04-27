@@ -80,7 +80,7 @@ function GuestPassModal({
                         Guest Pass
                       </h1>
                       <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
-                        Try us for 3 days free!
+                        Try us for 10 days free!
                       </p>
                       <form
                         onSubmit={handleSubmit(onSubmit)}
