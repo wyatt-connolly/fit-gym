@@ -11,7 +11,9 @@ With a wide range of amenities and highly trained staff, Fit provides fun and ef
 
 ## Screenshots :camera_flash:
 
-![fit-gym-taupe vercel app_benefits](https://user-images.githubusercontent.com/88942814/235233694-8cde3393-9f3e-44ae-a743-f51164433fd1.png)
+![fb9I7UZ](https://user-images.githubusercontent.com/88942814/235235791-7029220f-9cca-4ddf-8816-53480538968f.jpg)
+
+![fit-gym-taupe vercel app_ (18)](https://user-images.githubusercontent.com/88942814/235235522-49c112bc-f51a-4ef3-86d2-cea08b01b697.png)
 
 ![fit-gym-taupe vercel app_benefits (1)](https://user-images.githubusercontent.com/88942814/235233807-557ab4d1-e0cf-47e2-b13f-ce822e1b8364.png)
 
