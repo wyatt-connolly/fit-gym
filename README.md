@@ -11,15 +11,21 @@ With a wide range of amenities and highly trained staff, Fit provides fun and ef
 
 ## Screenshots :camera_flash:
 
-![AqDiGWk](https://user-images.githubusercontent.com/88942814/227751332-f24b1083-d778-403b-918d-c003ef2401c4.jpg)
-![dA4OUVQ](https://user-images.githubusercontent.com/88942814/227751630-17c918da-6a09-4d02-bcff-a3cc6bf5f3ec.png)
-![mWRO7ET](https://user-images.githubusercontent.com/88942814/227751641-3b8a1876-ce05-4c44-986b-66c2e2769616.png)
-![jzvmMo6](https://user-images.githubusercontent.com/88942814/227751670-db04aab2-2b59-4d42-9e38-6776b506e7ef.png)
-![rAr7OVF](https://user-images.githubusercontent.com/88942814/227751687-9c26b7e7-dae6-4c6a-9ff8-d632cbd0df65.jpg)
-![qG5Fo5u](https://user-images.githubusercontent.com/88942814/227751691-5d476bca-0111-49cc-9e10-92ae10d1dd4a.png)
-![UmXchp9](https://user-images.githubusercontent.com/88942814/227751695-53a5defd-8d79-4256-98aa-3454b9dbe624.png)
-![Ejh8QA7](https://user-images.githubusercontent.com/88942814/227751725-15b33bd2-602f-4dff-9189-1f212c881c28.png)
+![fb9I7UZ](https://user-images.githubusercontent.com/88942814/235235791-7029220f-9cca-4ddf-8816-53480538968f.jpg)
 
+![fit-gym-taupe vercel app_ (18)](https://user-images.githubusercontent.com/88942814/235235522-49c112bc-f51a-4ef3-86d2-cea08b01b697.png)
+
+![fit-gym-taupe vercel app_benefits (1)](https://user-images.githubusercontent.com/88942814/235233807-557ab4d1-e0cf-47e2-b13f-ce822e1b8364.png)
+
+![fit-gym-taupe vercel app_benefits (2)](https://user-images.githubusercontent.com/88942814/235233900-be67064a-6e98-4a0c-abda-841624f87b32.png)
+
+![fit-gym-taupe vercel app_benefits (3)](https://user-images.githubusercontent.com/88942814/235233966-96d9a018-47c4-4eaf-8681-32dae7c6da60.png)
+
+![fit-gym-taupe vercel app_benefits (4)](https://user-images.githubusercontent.com/88942814/235234101-d113ef7f-2088-4650-9238-ca06febee9da.png)
+
+![fit-gym-taupe vercel app_benefits (6)](https://user-images.githubusercontent.com/88942814/235234307-fe74bcce-1d85-4f78-a4c7-5317505e06ae.png)
+
+![fit-gym-taupe vercel app_benefits (7)](https://user-images.githubusercontent.com/88942814/235234390-9c056fbe-33e4-40c1-88fc-df7e71ba7f36.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
