@@ -11,9 +11,9 @@ function classNames(...classes: any) {
 function Page() {
   let [schedule] = useState(classSchedule);
   return (
-    <div className="md:h-[calc(100vh_-_136px)] mx-auto max-w-screen-xl px-8 py-8 shadow-xl">
+    <div className="md:h-[calc(100vh_-_136px)] mx-auto max-w-screen-2xl px-8 py-8">
       <Tab.Group>
-        <Tab.List className="flex flex-col md:flex-row  text-gray-500 font-medium overflow-auto touch-auto snap-x">
+        <Tab.List className="flex flex-col overflow-auto font-medium text-gray-500 md:flex-row touch-auto snap-x">
           {Object.keys(schedule).map((category) => (
             <Tab
               key={category}
@@ -31,7 +31,7 @@ function Page() {
         <Tab.Panels className="mt-2">
           {Object.values(schedule).map((posts, idx) => (
             <Tab.Panel key={idx} className={classNames("mt-8 ")}>
-              <ul className="md:grid md:grid-cols-2 gap-8 space-y-4 md:space-y-0">
+              <ul className="gap-8 space-y-4 md:grid md:grid-cols-2 md:space-y-0">
                 {posts.map((post) => (
                   <ClassScheduleCard key={post.id} {...post} />
                 ))}
