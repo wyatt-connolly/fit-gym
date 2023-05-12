@@ -9,11 +9,6 @@ With a wide range of amenities and highly trained staff, Fit provides fun and ef
 - React JS
 - Typescript
 
-## Lighthouse :rotating_light:
-
-![Birp7ry](https://github.com/wyatt-connolly/fit-gym/assets/88942814/0fa736f7-d557-47b7-aa07-9fc30d0eb5a5)
-
-
 ## Screenshots :camera_flash:
 
 ![fb9I7UZ](https://user-images.githubusercontent.com/88942814/235235791-7029220f-9cca-4ddf-8816-53480538968f.jpg)
