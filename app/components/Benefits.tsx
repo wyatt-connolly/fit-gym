@@ -7,8 +7,8 @@ type BenefitsProps = {
 };
 function Benefits({ icon, title, body }: BenefitsProps) {
   return (
-    <div className="flex items-start gap-4">
-      <span className="shrink-0 rounded-lg bg-black p-4 text-white">
+    <div className="flex items-start space-x-4">
+      <span className="p-4 text-white bg-black rounded-lg shrink-0">
         {icon}
       </span>
 
