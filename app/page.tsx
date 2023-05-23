@@ -5,9 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  description: "A lifestyle gym",
-};
 export default function Home() {
   return (
     <main>
@@ -45,7 +42,7 @@ export default function Home() {
 
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               <Link
-                className="inline-block px-8 py-3 font-medium text-gray-100 transition bg-zinc-900 rounded sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+                className="inline-block px-8 py-3 font-medium text-gray-100 transition rounded bg-zinc-900 sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
                 href="/pricing"
               >
                 Experience Fit
@@ -93,9 +90,9 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="mt-8 flex justify-center md:block">
+                <div className="flex justify-center mt-8 md:block">
                   <Link
-                    className="inline-block px-8 py-3 font-medium text-gray-100 transition bg-zinc-900 rounded sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring "
+                    className="inline-block px-8 py-3 font-medium text-gray-100 transition rounded bg-zinc-900 sm:text-md md:text-lg hover:scale-110 hover:shadow-xl focus:outline-none focus:ring "
                     href="/pricing"
                   >
                     Experience Fit
@@ -106,9 +103,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="overflow-hidden  bg-black sm:grid sm:grid-cols-2">
-        <div className="p-8 md:p-12 lg:px-16 lg:py-2 flex flex-col justify-center">
-          <div className="mx-auto max-w-xl text-center sm:text-left ">
+      <section className="overflow-hidden bg-black sm:grid sm:grid-cols-2">
+        <div className="flex flex-col justify-center p-8 md:p-12 lg:px-16 lg:py-2">
+          <div className="max-w-xl mx-auto text-center sm:text-left ">
             <h2 className="text-2xl font-bold text-gray-100 dark:text-white md:text-4xl">
               JOIN OUR COMMUNITY
             </h2>
@@ -127,7 +124,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="relative h-56 lg:h-96 w-full sm:h-full">
+        <div className="relative w-full h-56 lg:h-96 sm:h-full">
           <Image
             alt="Gym goer"
             src="https://images.unsplash.com/photo-1518605360659-2aa9659ef66d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1433&q=80"

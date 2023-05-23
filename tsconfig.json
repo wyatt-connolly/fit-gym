@@ -23,6 +23,13 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/utils/usePrettyPrintedState.tsx", "app/utils/particles.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/utils/usePrettyPrintedState.tsx",
+    "app/utils/particles.js"
+  ],
   "exclude": ["node_modules"]
 }

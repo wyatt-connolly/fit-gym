@@ -34,7 +34,7 @@ function Page() {
   return (
     <div className="text-gray-100 bg-black ">
       <div className=" h-[calc(100vh_-_224px)] min-[466px]:h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] md:h-[calc(100vh_-_136px)] bg-[url(https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)] bg-cover bg-center flex">
-        <div className="text-center grid place-content-center mx-auto max-w-xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 ">
+        <div className="grid max-w-xl px-4 py-8 mx-auto text-center place-content-center sm:px-6 lg:px-8 sm:py-12 lg:py-16 ">
           <div className="lg:py-24 ">
             <h2 className="text-3xl font-bold lg:text-5xl ">
               JOIN THE COLLECTIVE. POWER YOUR PURSUIT.
@@ -94,7 +94,7 @@ function Page() {
             </div>
           </div>
 
-          <div className="p-8 bg-white rounded-lg shadow-lg lg:col-span-3 lg:p-12 text-black">
+          <div className="p-8 text-black bg-white rounded-lg shadow-lg lg:col-span-3 lg:p-12">
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <input
                 type="text"

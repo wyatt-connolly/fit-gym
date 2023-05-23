@@ -5,10 +5,10 @@ function Footer() {
   return (
     <div>
       <footer aria-label="Site Footer" className="bg-black">
-        <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center lg:justify-between">
-            <div className="flex justify-center  text-teal-600 sm:justify-start">
-              <div className="relative h-16 w-16 object-cover overflow-hidden lg:h-32 lg:w-32">
+        <div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center lg:flex-row lg:justify-between">
+            <div className="flex justify-center text-teal-600 sm:justify-start">
+              <div className="relative object-cover w-16 h-16 overflow-hidden lg:h-32 lg:w-32">
                 <Image
                   src="https://fitathletic.com/wp-content/uploads/2021/09/fit-logo-white.png"
                   fill
@@ -17,12 +17,12 @@ function Footer() {
               </div>
             </div>
 
-            <p className="mt-4 max-w-md text-center leading-relaxed text-white text-3xl lg:text-5xl sm:text-left lg:mt-0">
+            <p className="max-w-md mt-4 text-3xl leading-relaxed text-center text-white lg:text-5xl sm:text-left lg:mt-0">
               A Lifestyle Gym.
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 gap-8 border-t border-gray-100 pt-16 md:grid-cols-4 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-8 pt-16 mt-16 border-t border-gray-100 md:grid-cols-4 lg:grid-cols-6">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-white">About Us</p>
 
@@ -189,16 +189,16 @@ function Footer() {
 
                   <li>
                     <a
-                      className="group flex justify-center gap-1.5 sm:justify-start"
+                      className="group flex justify-center space-x-1.5 sm:justify-start"
                       href="/"
                     >
                       <span className="text-white transition group-hover:text-teal-400/75">
                         Live Chat
                       </span>
 
-                      <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"></span>
-                        <span className="relative inline-flex h-2 w-2 rounded-full bg-teal-500"></span>
+                      <span className="relative flex w-2 h-2">
+                        <span className="absolute inline-flex w-full h-full bg-teal-400 rounded-full opacity-75 animate-ping"></span>
+                        <span className="relative inline-flex w-2 h-2 bg-teal-500 rounded-full"></span>
                       </span>
                     </a>
                   </li>
@@ -206,28 +206,28 @@ function Footer() {
               </nav>
             </div>
 
-            <div className="hidden sm:block text-center sm:text-left md:col-span-4 lg:col-span-2">
+            <div className="hidden text-center sm:block sm:text-left md:col-span-4 lg:col-span-2">
               <p className="text-lg font-medium text-white">Stay in Touch</p>
 
-              <div className="mx-auto mt-8 max-w-md sm:ml-0">
-                <p className="text-center leading-relaxed text-white sm:text-left">
+              <div className="max-w-md mx-auto mt-8 sm:ml-0">
+                <p className="leading-relaxed text-center text-white sm:text-left">
                   Want us to email you with the latest news?
                 </p>
 
                 <form className="mt-4">
-                  <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
+                  <div className="flex flex-col space-x-4 sm:space-y-4 sm:flex-row lg:flex-col lg:items-start">
                     <label htmlFor="email" className="sr-only">
                       Email
                     </label>
 
                     <input
-                      className="w-full rounded-full border-gray-200 px-6 py-3 shadow-sm"
+                      className="w-full px-6 py-3 border-gray-200 rounded-full shadow-sm"
                       type="email"
                       placeholder="Enter your email"
                     />
 
                     <button
-                      className="block rounded-full bg-white px-8 py-3 font-medium text-gray-900 transition hover:bg-white/90"
+                      className="block px-8 py-3 font-medium text-gray-900 transition bg-white rounded-full hover:bg-white/90"
                       type="submit"
                     >
                       Subscribe
@@ -238,12 +238,12 @@ function Footer() {
             </div>
           </div>
 
-          <div className="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
-            <p className="text-center text-sm text-white sm:text-left">
+          <div className="pt-6 mt-16 border-t border-gray-100 sm:flex sm:items-center sm:justify-between">
+            <p className="text-sm text-center text-white sm:text-left">
               Copyright &copy; 2023. All rights reserved.
             </p>
 
-            <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
+            <ul className="flex justify-center mt-4 space-x-6 sm:mt-0 sm:justify-start">
               <li>
                 <a
                   href="/"
@@ -253,7 +253,7 @@ function Footer() {
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -276,7 +276,7 @@ function Footer() {
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -299,7 +299,7 @@ function Footer() {
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -318,7 +318,7 @@ function Footer() {
                 >
                   <span className="sr-only">GitHub</span>
                   <svg
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -341,7 +341,7 @@ function Footer() {
                 >
                   <span className="sr-only">Dribbble</span>
                   <svg
-                    className="h-6 w-6"
+                    className="w-6 h-6"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
