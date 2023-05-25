@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <div className="sm:h-[calc(100vh_-_136px)] mx-auto max-w-screen-2xl px-4 py-8 sm:space-y-32 ">
+    <div className="h-[calc(100vh_-_68px)] mx-auto max-w-screen-2xl px-4 py-8 sm:space-y-32 ">
       <div className="text-center">
         <h1 className="mb-4 text-3xl font-bold sm:text-5xl">Start Here</h1>
         <p className="mb-5 text-xl text-gray-600">Choose your location.</p>

@@ -11,7 +11,7 @@ function classNames(...classes: any) {
 function Page() {
   let [schedule] = useState(classSchedule);
   return (
-    <div className="md:h-[calc(100vh_-_136px)] mx-auto max-w-screen-2xl px-8 py-8">
+    <div className="h-[calc(100vh_-_68px)] mx-auto max-w-screen-2xl px-8 py-8">
       <Tab.Group>
         <Tab.List className="flex flex-col overflow-auto font-medium text-gray-500 md:flex-row touch-auto snap-x">
           {Object.keys(schedule).map((category) => (

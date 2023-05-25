@@ -12,6 +12,7 @@ const navLinks = [
   { title: "Class Schedule", href: "/class-schedule" },
   { title: "Locations", href: "/locations" },
   { title: "Trainers", href: "/trainers" },
+  { title: "Blog", href: "/blog" },
 ];
 
 function Navbar() {
@@ -31,22 +32,6 @@ function Navbar() {
         setIsOpen={setIsOpen}
         closeModal={closeModal}
       />
-      <div className="px-4 py-3 text-white bg-zinc-700 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 sm:space-x-6">
-        <header aria-label="Site Header" className="shadow-sm">
-          <p className="font-medium text-center sm:text-left">
-            Special Offer 🔥 <br className="sm:hidden" />
-            10 Day All Club Access Membership with $0 Enrollment Fees
-          </p>
-        </header>
-        <div className="mt-4 sm:mt-0">
-          <button
-            className="block w-full px-5 py-3 text-sm font-medium text-center text-gray-900 transition bg-white rounded-lg sm:w-auto hover:bg-white/90 focus:outline-none sm:mt-0"
-            onClick={openModal}
-          >
-            SHOP NOW
-          </button>
-        </div>
-      </div>
       <div className="bg-black">
         <div className="max-w-screen-xl p-4 mx-auto">
           <div className="flex items-center justify-between space-x-4 lg:space-x-10">

@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export default function Home() {
   return (
     <main>
-      <div className="relative flex items-center justify-center h-[calc(100vh_-_224px)] min-[466px]:h-[calc(100vh_-_200px)] sm:h-[calc(100vh_-_136px)] md:h-[calc(100vh_-_136px)] overflow-hidden">
+      <div className="relative flex items-center justify-center h-[calc(100vh_-_68px)] overflow-hidden">
         <div className="relative z-20 flex items-center space-x-8 text-3xl font-extrabold text-white sm:text-5xl lg:text-8xl">
           <p className="p-2 border-4 border-white border-solid rounded-full sm:p-6 lg:p-8">
             fit
