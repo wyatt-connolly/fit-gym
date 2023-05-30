@@ -135,6 +135,7 @@ function GuestPassModal({
 
                         <input
                           type="submit"
+                          value="Submit"
                           className="block w-full rounded-lg bg-black px-5 py-3 text-sm font-medium cursor-pointer text-gray-100 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2"
                         />
                       </form>
