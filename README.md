@@ -5,9 +5,16 @@ With a wide range of amenities and highly trained staff, Fit provides fun and ef
 :point_right: Live Demo: [Fit Gym](https://fit-gym-taupe.vercel.app/)
 
 ## Built with:
-- Tailwind CSS
-- React JS
 - Typescript
+- React
+- Next.js
+- Tailwind
+
+## Features:
+- Class schedules, personal trainer profiles, and membership information.
+- Headless UI for popup dialogs, accordians, hamburger menu.
+- React Hook Form npm package for validation and seamless connection to backend of choice.
+- React-Toastify npm package that adds popup notification when form sign-up is validated and completed.
 
 ## Screenshots :camera_flash:
 
