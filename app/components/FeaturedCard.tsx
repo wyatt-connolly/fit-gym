@@ -22,15 +22,15 @@ function FeaturedCard({
         <div className="h-[350px] w-full sm:h-[450px]">
           <Image
             src={src}
-            alt=""
-            className=" object-cover transition duration-500 group-hover:opacity-90"
+            alt="Featured"
+            className="object-cover transition duration-500  group-hover:opacity-90"
             fill
           />
         </div>
 
         <div className="absolute inset-0 flex flex-col items-start justify-end p-6 ">
-          <div className="bg-black p-4 ">
-            <h3 className="text-xl md:text-2xl font-medium text-white mb-3 sm:mb-0">
+          <div className="p-4 bg-black ">
+            <h3 className="mb-3 text-xl font-medium text-white md:text-2xl sm:mb-0">
               {title}
             </h3>
 
@@ -38,8 +38,8 @@ function FeaturedCard({
               {description}
             </p>
 
-            <button className=" group relative inline-flex items-center overflow-hidden rounded bg-white px-6 md:px-8 py-2 md:py-3 text-black focus:outline-none focus:ring ">
-              <ArrowLongRightIcon className="h-5 w-5 absolute right-0 translate-x-full transition-transform group-hover:-translate-x-4" />
+            <button className="relative inline-flex items-center px-6 py-2 overflow-hidden text-black bg-white rounded  group md:px-8 md:py-3 focus:outline-none focus:ring">
+              <ArrowLongRightIcon className="absolute right-0 w-5 h-5 transition-transform translate-x-full group-hover:-translate-x-4" />
 
               <span className="text-sm font-medium transition-all group-hover:mr-4">
                 {button}

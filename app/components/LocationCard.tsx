@@ -17,7 +17,12 @@ function LocationCard({ src, city, state, rating }: LocationCardProps) {
       href="/pricing"
       className="relative block overflow-hidden rounded-xl hover:brightness-125"
     >
-      <Image src={src} className="object-cover brightness-50" alt="" fill />
+      <Image
+        src={src}
+        className="object-cover brightness-50"
+        alt="Locations"
+        fill
+      />
       <div className="relative flex items-start justify-between p-4 sm:p-6 lg:p-8 ">
         <div className="pt-12 text-white sm:pt-18 lg:pt-24">
           <h3 className="text-xl font-bold sm:text-2xl">{city}</h3>

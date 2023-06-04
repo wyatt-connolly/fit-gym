@@ -12,7 +12,7 @@ function Footer() {
                 <Image
                   src="https://fitathletic.com/wp-content/uploads/2021/09/fit-logo-white.png"
                   fill
-                  alt=""
+                  alt="Fit Athletic Club Logo"
                 />
               </div>
             </div>
