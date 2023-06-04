@@ -4,7 +4,6 @@ import Benefits from "../components/Benefits";
 import { benefits } from "@/data/benefits";
 import Link from "next/link";
 import { MouseEvent, useCallback } from "react";
-import type { Container, Engine } from "tsparticles-engine";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { usePrettyPrintedState } from "@/app/utils/usePrettyPrintedState";
 import { ToastContainer, toast } from "react-toastify";
